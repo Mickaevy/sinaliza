@@ -1,7 +1,3 @@
-import { Main } from '@/components/Main';
+import ModuleDetailsPage from '@/features/modules/[id]/ModuleDetailsPage';
 
-export default function Home() {
-  return (
-  <Main />
-  );
-}
+export default ModuleDetailsPage;
