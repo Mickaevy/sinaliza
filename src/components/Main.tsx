@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import Logo from '@/assets/logonome.svg';
 import Whats from '@/assets/whatsapp.svg';
 import Desenho from '@/assets/desenho.svg';
 import Link from 'next/link'; // Importando o Link do Next.js
@@ -9,16 +8,16 @@ export function Main() {
         <>
             {/* Seção Principal */}
             <div className="w-full bg-primary flex justify-center">
-                <div className="container mx-auto px-6 md:px- flex flex-col md:flex-row items-center justify-between py-16">
+                <div className="container mx-auto px-6 md:px- flex flex-col md:flex-row items-center justify-between pt-8 pb-16">
                     <div className="text-white text-center md:text-left flex-1">
                         <div className="flex flex-col items-center md:items-center gap-4">
-                            <Image src={Logo} alt="Logo" width={200} />
-                            <h2 className="font-light text-center text-2xl md:text-3xl max-w-md">
+                            <h1 className="text-7xl font-bold">SINALIZA</h1>
+                            <h2 className="font-semibold text-3xl md:text-3xl">
                                 Tornando mais fácil o aprendizado de Libras
                             </h2>
                             {/* Usando Link para navegação */}
                             <Link href="/modules">
-                                <button className="bg-white text-primary text-xl font-semibold w-48 rounded-lg p-3 transition-transform transform hover:scale-110">
+                                <button className="bg-white text-primary text-xl font-semibold w-48 rounded-lg p-3 transition-transform transform hover:scale-110 mt-4">
                                     Começar
                                 </button>
                             </Link>
