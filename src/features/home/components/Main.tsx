@@ -8,29 +8,31 @@ export function Main() {
     return (
         <>
             {/* Seção Principal */}
-            <div className="w-full bg-primary flex justify-center">
-                <div className="container mx-auto px-6 md:px- flex flex-col md:flex-row items-center justify-between py-16">
-                    <div className="text-white text-center md:text-left flex-1">
-                        <div className="flex flex-col items-center md:items-center gap-4">
-                            <Image src={Logo} alt="Logo" width={200} />
-                            <h2 className="font-light text-center text-2xl md:text-3xl max-w-md">
+            <div className="w-full bg-black flex justify-center">
+                <div className="container mx-auto px-6 md:px-12 flex flex-col md:flex-row items-top m-20 justify-between py-0">
+                    <div className="text-white text-left flex-1">
+                        <div className="flex flex-col items-start gap-6">
+                            <h1 className="font-bold text-4xl md:text-5xl leading-tight">
                                 Tornando mais fácil o aprendizado de Libras
-                            </h2>
+                            </h1>
+                            <p className="text-lg md:text-xl text-gray-100">
+                                Aprenda Libras de forma simples, intuitiva e prática
+                            </p>
                             {/* Usando Link para navegação */}
                             <Link href="/modules">
                                 <button className="bg-white text-primary text-xl font-semibold w-48 rounded-lg p-3 transition-transform transform hover:scale-110">
                                     Começar
-                                </button>
+                                </button> 
                             </Link>
                         </div>
                     </div>
-                    <div className="flex-1 flex justify-center mt-8 md:mt-0">
-                        <Image src={Desenho} alt="Desenho" width={700} height={700} className="w-full max-w-md" />
+                    <div className="flex-1 flex justify-center md:mt-0">
+                        <Image src={Desenho} alt="Desenho" className="w-full max-w-xl" />
                     </div>
                 </div>
             </div>
             
-            {/* Seção Sobre */}
+            {/* Seção Sobre
             <div className="w-full bg-secondary flex justify-center">
                 <div className="container mx-auto px-6 md:px-12 py-12">
                     <section className="text-center text-primary">
@@ -41,7 +43,8 @@ export function Main() {
                     </section>
                 </div>
             </div>
-            
+             */}
+
             {/* Botão WhatsApp */}
             <a 
                 href="https://wa.me/5586994618767" 

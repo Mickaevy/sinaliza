@@ -19,11 +19,14 @@ export function Header() {
   }, [menuOpen]);
 
   return (
-    <header className="w-full flex h-20 items-center bg-primary px-6 md:px-12 relative z-50">
-      <div className="w-full md:w-4/5 mx-auto flex justify-between items-center">
-      
+    <header className="w-full flex h-20 items-center bg-primary px-6 md:px-12 relative z-20">
+      <div className="w-full md:w-11/12 mx-auto flex justify-between items-center">
+       
         <Link href="/">
-          <Image src={Logo} alt="Logo" width={100} />
+        <div className ="flex items-center gap-2">
+          <Image src={Logo} alt="Logo" width={48} height={48} className="rounded-lg h-12 w-12" />
+          <span className="text-white font-semibold ml-2 text-4xl trancking-tight">Sinaliza</span>
+          </div>
         </Link>
 
         
@@ -31,7 +34,7 @@ export function Header() {
           className="md:hidden text-white focus:outline-none cursor-pointer"
           onClick={toggleMenu}
         >
-          <Menu size={30} />
+          <Menu size={20} />
         </button>
 
         
@@ -52,6 +55,8 @@ export function Header() {
         >
          
           <button 
+
+
             className="absolute top-5 right-6 text-white z-50"
             onClick={toggleMenu}
           >

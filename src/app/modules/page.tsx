@@ -2,11 +2,8 @@
 import Link from 'next/link';
 
 const modules = [
-  { id: 1, title: 'Módulo 1 - Alfabeto', description: 'Sinais das Letras do Alfabeto' },
-  { id: 2, title: 'Módulo 2 - Números', description: 'Sinais de Números' },
-  { id: 3, title: 'Módulo 3 - Saudações', description: 'Sinais de Saudações Cotidianas' },
-  { id: 4, title: 'Módulo 4 - Alimentos', description: 'Sinais de Alimentos' },
-  { id: 5, title: 'Módulo 5 - Calendário', description: 'Sinais Relacionados ao Calendário' },
+  { id: 1, title: 'Módulo 1 - Saudações', description: 'Sinais básicos de saudação' },
+  { id: 2, title: 'Módulo 2 - Alimentos', description: 'Sinais relacionados a alimentos' },
 ];
 
 export default function ModulesPage() {
