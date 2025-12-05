@@ -1,33 +1,33 @@
 import Image from 'next/image';
 import Logo from '@/assets/logonome.svg';
 import Whats from '@/assets/whatsapp.svg';
-import Desenho from '@/assets/desenho.svg';
+import Desenho from '@/assets/desenho.png';
 import Link from 'next/link'; // Importando o Link do Next.js
 
 export function Main() {
     return (
         <>
             {/* Seção Principal */}
-            <div className="w-full bg-black flex justify-center">
-                <div className="container mx-auto px-6 md:px-12 flex flex-col md:flex-row items-top m-20 justify-between py-0">
-                    <div className="text-white text-left flex-1">
-                        <div className="flex flex-col items-start gap-6">
-                            <h1 className="font-bold text-4xl md:text-5xl leading-tight">
-                                Tornando mais fácil o aprendizado de Libras
+            <div className="w-full bg-primary flex justify-center">
+                <div className="w-full md:w-11/12 container px-6 md:px-12 flex flex-col md:flex-row items-top m-10 justify-center py-1">
+                    <div className="text-white text-xs flex-1">
+                        <div className="flex flex-col text-left gap-6">
+                            <h1 className="font-bold md:text-5xl">
+                                Tornando mais fácil <br/>o aprendizado de Libras
                             </h1>
-                            <p className="text-lg md:text-xl text-gray-100">
+                            <h2 className="text-lg md:text-2xl text-gray-100 ">
                                 Aprenda Libras de forma simples, intuitiva e prática
-                            </p>
+                            </h2>
                             {/* Usando Link para navegação */}
                             <Link href="/modules">
-                                <button className="bg-white text-primary text-xl font-semibold w-48 rounded-lg p-3 transition-transform transform hover:scale-110">
+                                <button className="bg-white text-primary text-xl font-semibold w-56 rounded-lg p-3 transition-transform transform hover:scale-110">
                                     Começar
                                 </button> 
                             </Link>
                         </div>
                     </div>
-                    <div className="flex-1 flex justify-center md:mt-0">
-                        <Image src={Desenho} alt="Desenho" className="w-full max-w-xl" />
+                    <div className="flex justify-center items-baseline">
+                        <Image src={Desenho} alt="Desenho" className="w-full max-w-md" />
                     </div>
                 </div>
             </div>
