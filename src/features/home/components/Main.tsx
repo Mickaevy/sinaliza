@@ -14,7 +14,7 @@ export function Main() {
                     <div className="text-white text-xs flex-1">
                         <div className="flex flex-col text-left gap-6">
                             <h1 className="font-bold md:text-5xl">
-                                Tornando mais fácil <br/>o aprendizado de Libras
+                                Tornando o Aprendizado de<br/> libras mais fácil
                             </h1>
                             <h2 className="text-lg md:text-2xl text-gray-100 ">
                                 Aprenda Libras de forma simples, intuitiva e prática
