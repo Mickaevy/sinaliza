@@ -1,7 +1,8 @@
 import Image from 'next/image';
-import Logo from '@/assets/logonome.svg';
+import Logo from '@/assets/logosnome.svg';
 import Whats from '@/assets/whatsapp.svg';
 import Desenho from '@/assets/desenho.png';
+import lista from '@/assets/lista.png';
 import Link from 'next/link'; // Importando o Link do Next.js
 
 export function Main() {
@@ -24,11 +25,28 @@ export function Main() {
                                     Começar
                                 </button> 
                             </Link>
+                            <div className="flex flex-row gap-16">
+                            <div className="flex flex-row items-center gap-2">
+                        <Image src={Logo} alt="Logo" width={32} height={32} className="rounded-full" />
+                        <h3 className="text-lg md:text-base text-gray-100 ">
+                                Aprendizagem <br/>visual
+                            </h3>
+                    </div>
+                            
+                            <div className="flex flex-row items-center gap-2">
+                            <Image src={lista} alt="lista" width={32} height={32} className="rounded-lg" />
+                        <h4 className="text-lg md:text-base text-gray-100 ">
+                                Conteúdo <br/>organizado em módulos
+                            </h4>
+                    </div>
+                    </div>
+
                         </div>
                     </div>
                     <div className="flex justify-center items-baseline">
                         <Image src={Desenho} alt="Desenho" className="w-full max-w-md" />
                     </div>
+                    
                 </div>
             </div>
             
